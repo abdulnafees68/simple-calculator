@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Simple Calculator Script
-echo "Enter first number:"
-read num1
-echo "Enter second number:"
-read num2
-echo "Choose operation: +, -, *, /"
-read op
+# Simple Calculator Script using command-line arguments
+
+num1=$1
+num2=$2
+op=$3
 
 case $op in
   +)
