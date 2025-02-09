@@ -1,0 +1,17 @@
+mkdir -p .github/workflows
+echo 'name: Run Calculator Script
+
+on: [push]
+
+jobs:
+  run-calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Calculator Script
+        run: |
+          chmod +x cal.sh
+          echo "5" | ./cal.sh
+'
