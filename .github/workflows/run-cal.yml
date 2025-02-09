@@ -12,4 +12,4 @@ jobs:
       - name: Run Calculator Script
         run: |
           chmod +x cal.sh
-          ./cal.sh 5 3 *
+          ./cal.sh 5 3 \*
